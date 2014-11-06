@@ -22,7 +22,7 @@ $blocker->add('http://example.com', $action)
 $request = new Request($_GET, $_POST, [], $_COOKIE, $_FILES, ['HTTP_REFERER' => 'http://example_valid.com']);
 var_dump($blocker->validate($request)); //bool(true)
 ```
-If the domain (referer) is in the list, redirects to ```http://mydomain.com/invalid-referer```.
+If the domain (referer) ***is*** in the list, redirects to ```http://mydomain.com/invalid-referer```.
 
 ##Allowing
 With it, allow the request just for specif domains.
@@ -38,4 +38,4 @@ $blocker->add('http://example.com')
 $request = new Request($_GET, $_POST, [], $_COOKIE, $_FILES, ['HTTP_REFERER' => 'http://example1.com']);
 var_dump($blocker->validate($request)); //bool(true)
 ```
-If the domain (referer) is not in the list, redirects to ```http://mydomain.com/invalid-referer```.
+If the domain (referer) ***is not*** in the list, redirects to ```http://mydomain.com/invalid-referer```.
