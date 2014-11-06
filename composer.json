@@ -1,0 +1,25 @@
+{
+    "name": "gabrieljmj/httpreferer",
+    "description": "Blocker and allower to HTTP referers",
+    "authors": [
+        {
+            "name": "Gabriel Jacinto",
+            "email": "gamjj74@hotmail.com",
+            "homepage": "http://github.com/gabrieljmj"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "symfony/http-foundation": "2.6.*@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Test\\": "tests/",
+            "Gabrieljmj\\HttpRefererFilterFilter\\": "src/Gabrieljmj/HttpReferer/"
+        }
+    }
+}

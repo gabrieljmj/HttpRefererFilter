@@ -1,0 +1,4 @@
+composer.phar
+bootstrap.php
+vendor/
+composer.lock
