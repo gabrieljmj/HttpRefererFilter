@@ -7,7 +7,7 @@ Filter to allow or block HTTP referers.
 ##Blocker actions
 Blocker actions are actions to be executed when a referer not allowed try a request.
 * ```\Gabrieljmj\HttpRefererFilter\BlockerAction\RedirectWithHttpLocationHeader```: Redirects to some address. Pass on constructor an instance of ```\Symfony\Component\HttpFoundation\RedirectResponse```.
-* ```\Gabrieljmj\HttpRefererFilter\BlockerAction\PageContent```: Add on the page a content. Pass on constructor the content (string) and an instance of ```\Symfony\Component\HttpFoundation\RedirectResponse```.
+* ```\Gabrieljmj\HttpRefererFilter\BlockerAction\PageContent```: Add on the page a content. Pass on constructor the content (string) and an instance of ```\Symfony\Component\HttpFoundation\Response```.
 
 ##Blocking
 You can block specifc HTTP referers.
@@ -28,7 +28,7 @@ var_dump($blocker->validate($request)); //bool(true)
 If the domain (referer) **is** in the list, redirects to ```http://mydomain.com/invalid-referer```.
 
 ##Allowing
-With it, allow the request just for specif domains.
+With it, allow the request just for specifc domains.
 ```php
 use Gabrieljmj\HttpRefererFilter\HttpRefererAllower;
 use Gabrieljmj\HttpRefererFilter\BlockerAction\RedirectWithHttpLocationHeader;
