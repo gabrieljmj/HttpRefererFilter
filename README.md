@@ -4,6 +4,16 @@ Gabrieljmj\HttpRefererFilter
 
 Filter to allow or block HTTP referers.
 
+##Download
+Via [Composer](http://getcomposer.org):
+```json
+{
+    "require": {
+        "gabrieljmj/httprefererfilter": "dev-master"
+    }
+}
+```
+
 ##Blocker actions
 Blocker actions are actions to be executed when a referer not allowed try a request.
 * ```\Gabrieljmj\HttpRefererFilter\BlockerAction\RedirectWithHttpLocationHeader```: Redirects to some address. Pass on constructor an instance of ```\Symfony\Component\HttpFoundation\RedirectResponse```.
