@@ -39,6 +39,7 @@ If the domain (referer) **is** in the list, redirects to ```http://mydomain.com/
 
 ##Allowing
 With it, allow the request just for specifc domains.
+####Example
 ```php
 use Gabrieljmj\HttpRefererFilter\HttpRefererAllower;
 use Gabrieljmj\HttpRefererFilter\BlockerAction\RedirectWithHttpLocationHeader;
