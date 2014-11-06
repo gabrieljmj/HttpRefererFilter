@@ -14,6 +14,7 @@ You can block specifc HTTP referers.
 use Gabrieljmj\HttpRefererFilter\HttpRefererBlocker;
 use Gabrieljmj\HttpRefererFilter\BlockerAction\RedirectWithHttpLocationHeader;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Request;
 
 $action = new RedirectWithHttpLocationHeader(new RedirectResponse('http://mydomain.com/invalid-referer');
 $blocker = new HttpRefererBlocker();
@@ -30,6 +31,7 @@ With it, allow the request just for specif domains.
 use Gabrieljmj\HttpRefererFilter\HttpRefererAllower;
 use Gabrieljmj\HttpRefererFilter\BlockerAction\RedirectWithHttpLocationHeader;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Request;
 
 $action = new RedirectWithHttpLocationHeader(new RedirectResponse('http://mydomain.com/invalid-referer');
 $blocker = new HttpRefererAllower($action);
