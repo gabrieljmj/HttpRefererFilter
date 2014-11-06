@@ -1,6 +1,6 @@
 Gabrieljmj\HttpRefererFilter
 ============================
-[![Total Downloads](https://poser.pugx.org/gabrieljmj/httprefererfilter/downloads.png)](https://packagist.org/packages/gabrieljmj/httprefererfilter) [![Latest Unstable Version](https://poser.pugx.org/gabrieljmj/httprefererfilter/v/unstable.png)](https://packagist.org/packages/gabrieljmj/httprefererfilter) [![License](https://poser.pugx.org/gabrieljmj/httprefererfilter/license.png)](https://packagist.org/packages/gabrieljmj/httprefererfilter) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GabrielJMJ/SetEase/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GabrielJMJ/HttpRefererFilter/?branch=master)
+[![Total Downloads](https://poser.pugx.org/gabrieljmj/httprefererfilter/downloads.png)](https://packagist.org/packages/gabrieljmj/httprefererfilter) [![Latest Unstable Version](https://poser.pugx.org/gabrieljmj/httprefererfilter/v/unstable.png)](https://packagist.org/packages/gabrieljmj/httprefererfilter) [![License](https://poser.pugx.org/gabrieljmj/httprefererfilter/license.png)](https://packagist.org/packages/gabrieljmj/httprefererfilter) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GabrielJMJ/HttpRefererFilter/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GabrielJMJ/HttpRefererFilter/?branch=master)
 
 Filter to allow or block HTTP referers.
 

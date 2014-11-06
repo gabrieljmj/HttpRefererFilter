@@ -1,5 +1,5 @@
 {
-    "name": "gabrieljmj/httpreferer",
+    "name": "gabrieljmj/httprefererfilter",
     "description": "Blocker and allower to HTTP referers",
     "authors": [
         {
