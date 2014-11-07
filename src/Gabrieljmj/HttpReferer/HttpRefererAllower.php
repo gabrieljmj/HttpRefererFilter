@@ -18,12 +18,12 @@ class HttpRefererAllower implements HttpRefererFilterInterface
     /**
      * Action to execute when the validation failures
      *
-     * @var \Gabrieljmj\HttpRefererFilter\HttpRefererBlockerActionInterface
+     * @var \Gabrieljmj\HttpRefererFilter\BlockerAction\HttpRefererBlockerActionInterface
     */
     private $actionToBlockeds;
 
     /**
-     * @param \Gabrieljmj\HttpRefererFilter\HttpRefererBlockerActionInterface $action
+     * @param \Gabrieljmj\HttpRefererFilter\BlockerAction\HttpRefererBlockerActionInterface $action
     */
     public function __construct(HttpRefererBlockerActionInterface $action)
     {
@@ -33,7 +33,7 @@ class HttpRefererAllower implements HttpRefererFilterInterface
     /**
      * Sets the action to execute when the validation failures
      *
-     * @param \Gabrieljmj\HttpRefererFilter\HttpRefererBlockerActionInterface $action
+     * @param \Gabrieljmj\HttpRefererFilter\BlockerAction\HttpRefererBlockerActionInterface $action
     */
     public function setActionToBlockeds(HttpRefererBlockerActionInterface $action)
     {
