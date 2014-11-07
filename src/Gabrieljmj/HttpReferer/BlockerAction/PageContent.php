@@ -35,7 +35,7 @@ class PageContent implements HttpRefererBlockerActionInterface
     */
     public function execute()
     {
-        $this->response->setContent($this->content);
+        $this->response->setContent($this->pageContent);
         $this->response->send();
     }
 }

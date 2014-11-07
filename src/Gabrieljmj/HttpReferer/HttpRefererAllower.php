@@ -44,7 +44,7 @@ class HttpRefererAllower implements HttpRefererFilterInterface
      * Adds a HTTP referer to block
      *
      * @param string $referer
-     * @return \Gabrieljmj\HttpRefererFilter\AbstractHttpRefererValidator
+     * @return \Gabrieljmj\HttpRefererFilter\HttpRefererFilterInterface
     */
     public function add($referer)
     {
