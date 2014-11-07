@@ -55,7 +55,7 @@ class HttpRefererAllower implements HttpRefererFilterInterface
     /**
      * Validates the current HTTP referer
      *
-     * @param \Symfony\Component\HttpFoudation\Request $request
+     * @param \Symfony\Component\HttpFoundation\Request $request
     */
     public function validate(Request $request)
     {

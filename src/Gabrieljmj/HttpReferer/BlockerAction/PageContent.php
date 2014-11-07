@@ -2,6 +2,7 @@
 namespace Gabrieljmj\HttpRefererFilter\BlockerAction;
 
 use Gabrieljmj\HttpRefererFilter\BlockerAction\HttpRefererBlockerActionInterface;
+use Symfony\Component\HttpFoundation\Response;
 
 class PageContent implements HttpRefererBlockerActionInterface
 {
@@ -13,12 +14,19 @@ class PageContent implements HttpRefererBlockerActionInterface
     protected $response;
 
     /**
+     * Content to add
+     *
+     * @var string
+    */
+    private $pageContent;
+
+    /**
      * @param string                                     $content
      * @param \Symfony\Component\HttpFoundation\Response $response
     */
     public function __construct($content, Response $response)
     {
-        $this->pageContent;
+        $this->pageContent = $content;
         $this->response = $response;
     }
 
